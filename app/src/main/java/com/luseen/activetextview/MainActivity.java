@@ -1,6 +1,7 @@
 package com.luseen.activetextview;
 
 import android.content.DialogInterface;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
@@ -29,10 +30,11 @@ public class MainActivity extends AppCompatActivity {
 
         //autoLinkTextView.setCustomRegex("\\sAllo\\b");
 
-        autoLinkTextView.setHashtagModeColor(ContextCompat.getColor(this, R.color.color2));
+        autoLinkTextView.setHashtagModeColor(Color.BLACK);
         autoLinkTextView.setPhoneModeColor(ContextCompat.getColor(this, R.color.color3));
         autoLinkTextView.setCustomModeColor(ContextCompat.getColor(this, R.color.color1));
         autoLinkTextView.setMentionModeColor(ContextCompat.getColor(this, R.color.color5));
+        autoLinkTextView.enableBold();
 
         autoLinkTextView.setAutoLinkText(getString(R.string.long_text));
 
